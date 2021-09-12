@@ -1,0 +1,75 @@
+:root{
+    --primary-color:#faedcd;
+    --grey:#d3d3d3;
+}
+
+body{
+    background-color: var(--primary-color);
+    background-image: url("photo/yoda.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family:'Lato', sans-serif;
+    height:600px;
+    margin:0px;
+    padding:0px;
+    text-align:center;
+}
+
+h1{
+    color:#ffffff;
+    font-size:4.5rem;
+    font-weight:900;
+    margin-top:1rem;
+}
+
+.intro-span{
+    color:var(--primary-color);
+    font-weight:600;
+}
+.intro{
+    color:var(--primary-color);
+    display:block;
+    font-size:2rem;
+    font-weight:400;
+    justify-content:center;
+    padding-top:20px;
+}
+.intro-tr{
+    color:var(--primary-color);
+    display:block;
+    font-size:1.5rem;
+    font-weight:400;
+    justify-content:center;
+}
+
+textarea{
+    display:block;
+    margin:2rem 6.5rem 1rem 6.5rem;
+    text-align:center;
+}
+
+#btn-translate{
+    background-color: black;
+    border-radius:0.8rem;
+    color:var(--grey);
+    font-size:x-large;
+    padding:1rem;
+}
+#btn-translate:hover{
+    box-shadow:2px 3px var(--grey);
+    color:var(--primary-color);
+    cursor:pointer;
+}
+
+#output{
+    margin:2rem 6.5rem 1rem 6.5rem;
+}
+
+h4{
+    display:inline-block;
+    font-weight:400;
+    font-size:1.5rem;
+    justify-content:center;
+    margin: 1em 3rem 0; /*top horizontal bottom*/
+    padding:3rem 2rem 0;
+}
