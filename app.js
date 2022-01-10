@@ -3,10 +3,9 @@ var txtInput = document.querySelector("#txt-input");
 var outputDiv= document.querySelector("#output");
 var serverURL = "https://api.funtranslations.com/translate/yoda.json";
 
-function getTranslationURL(text){
-   return serverURL + "?" +"text=" + text;
-}
-function errorHandler(error){
+const getTranslationURL = (text) => serverURL + "?" + "text=" + text
+
+const errorHandler = (error) => {
    console.log("error occured",error);
    alert("something wrong with the server, try again next time");
 }
