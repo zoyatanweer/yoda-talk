@@ -1,7 +1,7 @@
-var btnTranslate = document.querySelector("#btn-translate");
-var txtInput = document.querySelector("#txt-input");
-var outputDiv= document.querySelector("#output");
-var serverURL = "https://api.funtranslations.com/translate/yoda.json";
+const btnTranslate = document.querySelector("#btn-translate");
+const txtInput = document.querySelector("#txt-input");
+const outputDiv= document.querySelector("#output");
+const serverURL = "https://api.funtranslations.com/translate/yoda.json";
 
 const getTranslationURL = (text) => serverURL + "?" + "text=" + text
 
@@ -11,11 +11,11 @@ const errorHandler = (error) => {
 }
 
 function clickHandler(){
-   var inputText= txtInput.value    /**taking input**/
+   const inputText= txtInput.value    /**taking input**/
    fetch(getTranslationURL(inputText))
       .then (response => response.json())
       .then (json => {
-         var translatedText=json.contents.translated;
+         const translatedText=json.contents.translated;
          outputDiv.innerText = translatedText;
       })
       .catch(errorHandler)
